@@ -10,7 +10,6 @@ import Bonuses from "../Bonuses";
 import Certification from "../Certification";
 import SpecialDesignedFor from "../SpecialDesignedFor";
 import MeetYourMentor from "../MeetYourMentor";
-import DoYouKnow from "../DoYouKnow";
 import FAQSection from "../FAQSection";
 
 import Register from "../Register";
@@ -27,7 +26,6 @@ const Home = () => (
     <Certification />
     <SpecialDesignedFor />
     <MeetYourMentor />
-    <DoYouKnow />
     <FAQSection />
   </div>
 );

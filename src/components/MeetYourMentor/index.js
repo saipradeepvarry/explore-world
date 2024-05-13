@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import Register from "../Register";
 import './index.css';
@@ -35,8 +34,8 @@ function MeetYourMentor() {
           </div>
           <div className="mentor-description">
             <p className='description'>
-              As the CEO of our company, he is a <span style={{ color: 'green', fontWeight: 'bold' }}>young, energetic leader</span> with a
-              <span style={{ color: 'green', fontWeight: 'bold' }}>strong sense of purpose</span> and a <span style={{ color: 'green', fontWeight: 'bold' }}>clear vision for the future</span>.
+              As the CEO of our company, he is a <span style={{ color: 'green', fontWeight: 'bold' }}>young, energetic leader</span> with a 
+              <span style={{ color: 'green', fontWeight: 'bold' }}> strong sense of purpose</span> and a <span style={{ color: 'green', fontWeight: 'bold' }}>clear vision for the future</span>.
               He is always on the go and looking for new opportunities to grow his business, and he is highly business-minded and values money.
               However,He is known for his <span style={{ color: 'green', fontWeight: 'bold' }}>outgoing and friendly personality</span>, and he loves to talk to people and make connections.
               He has a laid-back and approachable style that makes people feel at ease, and he believes that work should be enjoyable.

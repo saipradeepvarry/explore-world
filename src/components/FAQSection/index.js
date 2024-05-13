@@ -1,14 +1,6 @@
-// import React from "react";
-
-// const FAQSection = () => {
-//   return <div>FAQSection</div>;
-// };
-
-// export default FAQSection;
-
-//neew
 import React, { useState } from "react";
 import "./index.css";
+import Register from "../Register";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
@@ -82,7 +74,9 @@ function FAQSection() {
           onClick={() => handleAccordionClick(index)}
         />
       ))}
+        <Register />
     </div>
+    
   );
 }
 
