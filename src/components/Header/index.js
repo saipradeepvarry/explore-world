@@ -33,7 +33,7 @@ const Header = () => {
           </button>
         </Link>
 
-        <Link to="/RegisterForm">
+        <Link to="/register-form">
           <button
             className="btn btn-danger"
             value="RegisterForm"

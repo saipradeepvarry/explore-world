@@ -44,7 +44,7 @@ const SpecialDesignedFor = () => {
           <h1 className="specH1">
             <span className="s2000">₹2000</span> ₹99
           </h1>
-          <Link type="button" className="btn btn-danger" to="/RegisterForm">
+          <Link type="button" className="btn btn-danger" to="/register-form">
             Register Now
           </Link>
           <p className="specP1">100% Money Back Guarantee</p>

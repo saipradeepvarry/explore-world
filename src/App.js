@@ -13,8 +13,8 @@ function App() {
 
         <Routes>
           <Route exact path="/" Component={Home} />
-          <Route exact path="/RegisterForm" Component={RegisterForm} />
-          <Route exact path="/Paynow" Component={Paynow} />
+          <Route exact path="/register-form" Component={RegisterForm} />
+          <Route exact path="/paynow" Component={Paynow} />
         </Routes>
       </div>
     </BrowserRouter>

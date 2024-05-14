@@ -19,7 +19,7 @@ const Register = () => {
         className="d-flex justify-content-center flex-column"
         style={{ gap: "10px" }}
       >
-        <Link className="content" to="/RegisterForm">
+        <Link className="content" to="/register-form">
           <div
             className={`shaking-container  outerRegisterContainer ${
               isHovered ? "paused" : ""

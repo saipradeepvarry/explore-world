@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "./index.css";
+
 const RegisterForm = () => {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
@@ -11,7 +13,7 @@ const RegisterForm = () => {
   });
   const handleSubmit = async (event) => {
     event.preventDefault();
-    navigate("/Paynow");
+    navigate("/paynow");
   };
 
   const setCredentialsOf = (event) => {
@@ -19,12 +21,11 @@ const RegisterForm = () => {
   };
 
   return (
-    <div>
-      {" "}
-      <div className="insideConainer m-3">
+    <div className="p-3 d-flex justify-content-center">
+      <div className="insideConainer ">
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="userName" className="form-label">
+            <label htmlFor="userName" className="form-label txtClr">
               User Name
             </label>
             <input
@@ -38,7 +39,7 @@ const RegisterForm = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">
+            <label htmlFor="exampleInputEmail1" className="form-label txtClr">
               Email address
             </label>
             <input
@@ -51,13 +52,16 @@ const RegisterForm = () => {
               value={credentials.email}
               onChange={setCredentialsOf}
             />
-            <div id="emailHelp" className="form-text">
+            <div id="emailHelp" className="form-text txtClr">
               We'll never share your email with anyone else.
             </div>
           </div>
 
           <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">
+            <label
+              htmlFor="exampleInputPassword1"
+              className="form-label txtClr"
+            >
               Phone Number
             </label>
             <input
