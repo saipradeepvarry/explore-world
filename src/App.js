@@ -1,10 +1,23 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-
+import RegisterForm from "./components/RegisterForm";
+import Header from "./components/Header";
+import Paynow from "./components/PayNow";
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <div className="p-2 ">
+          <Header />
+        </div>
+
+        <Routes>
+          <Route exact path="/" Component={Home} />
+          <Route exact path="/RegisterForm" Component={RegisterForm} />
+          <Route exact path="/Paynow" Component={Paynow} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

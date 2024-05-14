@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
 const Register = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,15 +19,15 @@ const Register = () => {
         className="d-flex justify-content-center flex-column"
         style={{ gap: "10px" }}
       >
-        <div
-          className={`shaking-container  outerRegisterContainer ${
-            isHovered ? "paused" : ""
-          }`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div>
-            <a className="content" href="http://razorpay.me/@explorerscompany">
+        <Link className="content" to="/RegisterForm">
+          <div
+            className={`shaking-container  outerRegisterContainer ${
+              isHovered ? "paused" : ""
+            }`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div>
               <span className="">
                 <span className="">
                   Launch Your Own Tourism Business with{" "}
@@ -41,9 +42,9 @@ const Register = () => {
                   <br />
                 </span>
               </span>
-            </a>
-          </div>
-        </div>{" "}
+            </div>
+          </div>{" "}
+        </Link>
         <h5
           style={{
             color: "#000",
