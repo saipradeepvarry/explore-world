@@ -25,7 +25,7 @@
 
 .blink {
   animation: blink 4s infinite;
-  background-color: #f9f9f971;
+
   padding: 10px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .voice {
-  max-width: 300px;
+  width: 90%;
   text-align: left;
   padding: 1.5rem;
   border-radius: 10px;
