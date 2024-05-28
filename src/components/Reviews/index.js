@@ -1,7 +1,6 @@
-// StudentTestimonials.js
 import React from "react";
 import "./index.css";
-// APP to upadate StudentTestimonials
+
 const Reviews = () => {
   return (
     <section className="feedback">
@@ -20,10 +19,10 @@ const Reviews = () => {
             <img
               className="profile-img"
               src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1715321728/photo1_kkdz1j.jpg"
-              alt=""
+              alt="Mukesh"
             />
             <div className="detail">
-              <h3>Mukesh </h3>
+              <h3>Mukesh</h3>
               <p className="student-info">Hospitality Management Student</p>
             </div>
           </div>
@@ -38,7 +37,7 @@ const Reviews = () => {
             <img
               className="profile-img"
               src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1715321791/photo2_fegcer.jpg"
-              alt=""
+              alt="Zoyo Alex"
             />
             <div className="detail">
               <h3>Zoyo Alex</h3>
@@ -56,7 +55,7 @@ const Reviews = () => {
             <img
               className="profile-img"
               src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1715321836/photo3_qtn4wj.jpg"
-              alt=""
+              alt="Pradeep"
             />
             <div className="detail">
               <h3>Pradeep</h3>
@@ -74,7 +73,7 @@ const Reviews = () => {
             <img
               className="profile-img"
               src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1715321877/photo4_q57ryq.jpg"
-              alt=""
+              alt="James Wilson"
             />
             <div className="detail">
               <h3>James Wilson</h3>
@@ -93,7 +92,7 @@ const Reviews = () => {
             <img
               className="profile-img"
               src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1715321931/photo5_vzwxgp.jpg"
-              alt=""
+              alt="Emma Davis"
             />
             <div className="detail">
               <h3>Emma Davis</h3>
@@ -112,7 +111,7 @@ const Reviews = () => {
             <img
               className="profile-img"
               src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1715321999/photo6_iph1yy.jpg"
-              alt=""
+              alt="Emily Parker"
             />
             <div className="detail">
               <h3>Emily Parker</h3>
@@ -131,5 +130,4 @@ const Reviews = () => {
   );
 };
 
-// export as StudentTestimonials
 export default Reviews;
