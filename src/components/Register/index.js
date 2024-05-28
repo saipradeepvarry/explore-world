@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 import "./index.css";
 const Register = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +19,11 @@ const Register = () => {
         className="d-flex justify-content-center flex-column"
         style={{ gap: "10px" }}
       >
-        <Link className="content" to="/register-form">
+        <a
+          href="https://pages.razorpay.com/tourismbusiness"
+          className="content"
+          to="/register-form"
+        >
           <div
             className={`shaking-container  outerRegisterContainer ${
               isHovered ? "paused" : ""
@@ -44,7 +48,7 @@ const Register = () => {
               </span>
             </div>
           </div>{" "}
-        </Link>
+        </a>
         <h5
           style={{
             color: "#000",

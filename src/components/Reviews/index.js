@@ -8,7 +8,7 @@ const Reviews = () => {
       <div className="container">
         <h2 className="heading">What Our Students Say</h2>
         <p className="paragraph">
-          <span className="blink" style={{ color: "red" }}>
+          <span className="blink" style={{ color: "#fff" }}>
             Hear from our students about their experience with our courses.
           </span>
         </p>

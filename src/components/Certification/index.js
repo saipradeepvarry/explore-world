@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
 import Register from "../Register";
+import certificate from "./Certificate.png";
+
 const Certification = () => {
   const cerficate = (
     <div className="certificateContainer">
@@ -10,11 +12,7 @@ const Certification = () => {
         <span style={{ color: "#B9FD27" }}>Skill Nation</span> which brings a
         lot of credibility to your certificate & your resume
       </h4>
-      <img
-        className="certificateImg"
-        src="https://go.navinparmar.in/wp-content/uploads/2024/05/Navin-02.webp"
-        alt="certificate"
-      />
+      <img className="certificateImg" src={certificate} alt="certificate" />
       <Register />
     </div>
   );

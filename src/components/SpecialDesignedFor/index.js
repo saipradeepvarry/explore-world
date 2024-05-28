@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import { Link } from "react-router-dom";
+
 const SpecialDesignedFor = () => {
   const [minutes, setMinutes] = useState(60);
   const [seconds, setSeconds] = useState(0);
@@ -44,9 +44,13 @@ const SpecialDesignedFor = () => {
           <h1 className="specH1">
             <span className="s2000">₹2000</span> ₹99
           </h1>
-          <Link type="button" className="btn btn-danger" to="/register-form">
+          <a
+            type="button"
+            className="btn btn-danger"
+            href="https://pages.razorpay.com/tourismbusiness"
+          >
             Register Now
-          </Link>
+          </a>
           <p className="specP1">100% Money Back Guarantee</p>
         </div>
       </div>
