@@ -22,7 +22,7 @@ const Bonuses = () => {
   return (
     <div>
       <div className="BonusHeadContainer">
-        <h1 className="BonusHE1">Register before midnight of 10 May 2024</h1>
+        <h1 className="BonusHE1">Register before midnight of 3rd June 2024</h1>
         <p className="BonusP1">To Unlock All Bonuses worth Rs 12,000</p>
       </div>
       <div>{BonusCards}</div>

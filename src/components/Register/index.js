@@ -60,7 +60,7 @@ const Register = () => {
           Register before{" "}
           <span style={{ color: "#e69b2f", fontWeight: "bold" }}>
             {" "}
-            May 10, 2024{" "}
+            June 3, 2024{" "}
           </span>
           to unlock bonuses worth{" "}
           <span style={{ color: "#e69b2f", fontWeight: "bold" }}>

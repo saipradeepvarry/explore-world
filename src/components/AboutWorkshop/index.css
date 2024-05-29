@@ -40,6 +40,7 @@
 
 .iframeVideo {
   width: 780px;
+  display: none;
   height: 482px;
 }
 
@@ -69,11 +70,17 @@
   font-size: 25px;
   font-weight: 600;
 }
-
+.apjImg {
+  width: 80%;
+}
 @media (max-width: 786px) {
   .iframeVideo {
     width: 100%;
+    display: none;
     height: 218px;
+  }
+  .apjImg {
+    width: 100%;
   }
 
   .AboutWorkShopInnerContainer {

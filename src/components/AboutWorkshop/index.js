@@ -2,15 +2,16 @@ import React from "react";
 import "./index.css";
 import Register from "../Register";
 import BulletPoints from "../BulletPoints";
+import Abjphoto from "./EXPLORERS MEETING.png";
 const AboutWorkshop = () => {
   const workshopdate = (
     <div className="workShopDateContainer">
       <div className="headContainer">
-        <h1 className="headTime">18th May, Saturday</h1>
+        <h1 className="headTime">8th June</h1>
         <h3 className="headDate">Date</h3>
       </div>
       <div className="headContainer">
-        <h1 className="headTime">7 PM Onwards</h1>
+        <h1 className="headTime">6:30 - 9:30PM</h1>
         <h3 className="headDate">TIME</h3>
       </div>
       <div className="headContainer">
@@ -54,7 +55,7 @@ const AboutWorkshop = () => {
             frameborder="0"
             allowfullscreen
           ></iframe>
-
+          <img src={Abjphoto} alt="apj" className="apjImg" />
           <div>
             {" "}
             {<Register />}

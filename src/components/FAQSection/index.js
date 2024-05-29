@@ -32,7 +32,7 @@ function FAQSection() {
     {
       question: "  When is the next tourism workshop scheduled?",
       answer:
-        "  The next tourism workshop is scheduled for Saturday, 25th May 2024, at 10:00 a.m. IST.",
+        "  The next tourism workshop is scheduled for Saturday, 25th June 2024, at 10:00 a.m. IST.",
     },
     {
       question:
@@ -74,7 +74,6 @@ function FAQSection() {
         />
       ))}
     </div>
-    
   );
 }
 
