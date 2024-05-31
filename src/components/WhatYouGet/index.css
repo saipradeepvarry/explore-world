@@ -41,6 +41,12 @@
   margin: 5px;
   border-radius: 5px;
 }
+.topHead {
+  color: #ff6100;
+  font-weight: bold;
+  text-align: center;
+  font-size: 27px;
+}
 @media (max-width: 786px) {
   .topicH1 {
     color: #051a2d;
