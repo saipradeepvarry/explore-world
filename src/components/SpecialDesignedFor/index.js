@@ -2,29 +2,42 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 
 const SpecialDesignedFor = () => {
-  const [minutes, setMinutes] = useState(60);
-  const [seconds, setSeconds] = useState(0);
+  const calculateTimeLeft = () => {
+    const currentTime = new Date();
+    const targetTime = new Date(currentTime.getFullYear(), 5, 3, 0, 0, 0); // June 3rd midnight
+    const difference = targetTime - currentTime;
+
+    let timeLeft = {};
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+        total: difference,
+      };
+    } else {
+      timeLeft = { days: 0, minutes: 0, seconds: 0, total: 0 };
+    }
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [timerFinished, setTimerFinished] = useState(false);
 
   useEffect(() => {
     const countdown = setInterval(() => {
-      if (seconds === 0) {
-        if (minutes === 0) {
-          clearInterval(countdown);
-          setTimerFinished(true);
-          // Timer has reached 0, perform any action needed here
-        } else {
-          setMinutes(minutes - 1);
-          setSeconds(59);
-        }
-      } else {
-        setSeconds(seconds - 1);
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+
+      if (newTimeLeft.total <= 0) {
+        clearInterval(countdown);
+        setTimerFinished(true);
       }
     }, 1000);
 
     // Cleanup function to clear interval when component unmounts
     return () => clearInterval(countdown);
-  }, [minutes, seconds]);
+  }, []);
 
   const formatTime = (time) => {
     return time < 10 ? `0${time}` : time;
@@ -36,8 +49,8 @@ const SpecialDesignedFor = () => {
         <div className="priceContainer">
           <p className="specP001">Price increases in</p>
           <p className="specP001">
-            {formatTime(minutes)} min{" "}
-            <span className="timer">{formatTime(seconds)}</span> sec
+            {timeLeft.days} days {formatTime(timeLeft.minutes)} min{" "}
+            <span className="timer">{formatTime(timeLeft.seconds)}</span> sec
           </p>
         </div>
         <div className="priceContainer">
