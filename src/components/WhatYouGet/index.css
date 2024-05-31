@@ -2,16 +2,42 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  width: 100%;
+  width: 45%;
   background: linear-gradient(to bottom, #dadadadc, #fff);
-  margin-top: 4px;
+  min-height: 200px;
   border-radius: 10px;
+  margin: auto;
+  margin-top: 8px;
   align-items: center;
   border-style: solid;
   border-color: #dadada;
 }
+.pointP {
+  font-family: "Poppins", Sans-serif;
+  color: #7a7a7a;
+  text-align: center;
+}
+.topicH1 {
+  color: #051a2d;
+  font-family: "Poppins", Sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.inrContainer {
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.imageP1 {
+  width: 30%;
+  margin: auto;
+  margin-right: 10px;
+  text-align: center;
+}
 .imageWhat {
-  width: 60px;
+  width: 100%;
   margin: 5px;
   border-radius: 5px;
 }
@@ -19,25 +45,32 @@
   .topicH1 {
     color: #051a2d;
     font-family: "Poppins", Sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
   }
 
   .pointP {
-    font-size: 15px;
+    font-size: 13px;
     font-family: "Poppins", Sans-serif;
     color: #7a7a7a;
   }
 
   .whatLoopContainer {
+    min-height: auto;
     padding: 5px;
     width: 100%;
   }
+  .imageP1 {
+    width: 40%;
+    margin: auto;
+    margin-right: 10px;
+    text-align: center;
+  }
 
   .imageWhat {
-    width: 60px;
-    margin: 5px;
+    width: 100px;
+    margin: 0px;
     border-radius: 5px;
   }
   .topHead {
