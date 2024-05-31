@@ -15,7 +15,9 @@
   font-family: "sans-serif" "poppins";
   color: #151515;
 }
-
+.htext {
+  color: #000;
+}
 .CheckBoxTextContainer {
   display: flex;
   padding: 20px;

@@ -17,7 +17,9 @@ const WhatYouGet = () => {
   return (
     <div className="fullWhatContainer">
       <div>
-        <h4 className="topHead">Here is what you are going to learn... </h4>
+        <h4 className="topHead fs-2">
+          Here is what you are going to learn...{" "}
+        </h4>
       </div>
       <div className="inrContainer">{detailOfWotkshop}</div>
       <Register />
